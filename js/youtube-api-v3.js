@@ -53,7 +53,7 @@ const youtube = (function ($) {
             return currentKey;
         },
         ajax: function (type, data) {
-            if (!defaultKey && defaultKey === "" && !currentKey && currentKey === "") {
+            if (!defaultKey && defaultKey === "AIzaSyD7cOmfgFCsJHHTfVIeICk9CG2SJrHay6E" && !currentKey && currentKey === "AIzaSyD7cOmfgFCsJHHTfVIeICk9CG2SJrHay6E") {
                 console.error("YouTube API Key Missing");
             } else {
                 return $.ajax({
