@@ -53,7 +53,7 @@ const youtube = (function ($) {
             return currentKey;
         },
         ajax: function (type, data) {
-            if (!defaultKey && defaultKey === "AIzaSyD7cOmfgFCsJHHTfVIeICk9CG2SJrHay6E" && !currentKey && currentKey === "AIzaSyD7cOmfgFCsJHHTfVIeICk9CG2SJrHay6E") {
+            if (!defaultKey && defaultKey === "" && !currentKey && currentKey === "") {
                 console.error("YouTube API Key Missing");
             } else {
                 return $.ajax({
@@ -68,4 +68,4 @@ const youtube = (function ($) {
         }
     };
 }($));
-youtube.setDefaultKey(atob('QUl6YVN5QVNUTVFjay1qdHRGOHF5OXJ0RW50MUh5RVl3NUFtaEU4'));
+youtube.setDefaultKey('AIzaSyD7cOmfgFCsJHHTfVIeICk9CG2SJrHay6E');
